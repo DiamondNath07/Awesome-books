@@ -44,7 +44,7 @@ Feel free to check the [issues page](https://github.com/DiamondNath07/Awesome-bo
 
 ### Go Live
 
-https://diamondnath07.github.io/Web_Summit/ 
+https://diamondnath07.github.io/Awesome-books/
 
 ## Show your support
 
