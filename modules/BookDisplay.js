@@ -6,7 +6,7 @@ export default function showBooks(books) {
     element.classList.add(className);
     parent.appendChild(element);
     return element;
-  }
+  };
 
   const bookList = document.querySelector('.book-list');
   books.arrBooks.forEach((book) => {
