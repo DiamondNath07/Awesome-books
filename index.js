@@ -108,7 +108,12 @@ linkContact.addEventListener('click', () => {
   contact.classList.remove('hide');
 });
 
-
+const setTime = () => {
+  dateTime.innerHTML = DateTime.now().toLocaleString(
+    DateTime.DATETIME_MED_WITH_SECONDS
+  );
+};
+setInterval(setTime, 1000);
 
 window.onload = () => {
   books.classList.remove('hide');
@@ -117,7 +122,6 @@ window.onload = () => {
 
   awesomeBookShelf.arrBooks = loadDataFromLocalStorage();
   showBooks(awesomeBookShelf);
-  
 };
 
 // BooksToDom.domBooksList(book);
