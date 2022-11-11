@@ -1,6 +1,6 @@
-import { saveDataToLocalStorage } from './LocalStorage.js';
+import { saveDataToLocalStorage } from './localStorage.js';
 
-function showBooks(books) {
+export default function showBooks(books) {
   function addElement(elementType, parent, className) {
     const element = document.createElement(elementType);
     element.classList.add(className);
@@ -17,7 +17,7 @@ function showBooks(books) {
     const bookRemoveButton = addElement(
       'button',
       bookItem,
-      'book-remove-button'
+      'book-remove-button',
     );
     bookRemoveButton.innerHTML = 'Remove';
 
@@ -28,5 +28,3 @@ function showBooks(books) {
     });
   });
 }
-
-export {showBooks};
