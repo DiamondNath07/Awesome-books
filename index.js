@@ -4,7 +4,7 @@ import showBooks from './modules/BookDisplay.js';
 import {
   loadDataFromLocalStorage,
   saveDataToLocalStorage,
-} from './modules/localStorage.js';
+} from './modules/LocalStorage.js';
 
 const currentFormTitle = document.querySelector('#title');
 const currentFormAuthor = document.querySelector('#author');

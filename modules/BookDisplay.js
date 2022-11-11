@@ -1,4 +1,4 @@
-import { saveDataToLocalStorage } from './localStorage.js';
+import { saveDataToLocalStorage } from './LocalStorage.js';
 
 export default function showBooks(books) {
   function addElement(elementType, parent, className) {
