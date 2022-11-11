@@ -11,6 +11,9 @@ class BookShelf {
     };
 
     this.arrBooks.push(newBook);
+    if (author.value === null) {
+      addBook = '';
+    }
   }
 
   removeBook(id) {

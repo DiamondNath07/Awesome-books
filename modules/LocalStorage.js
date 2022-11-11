@@ -1,14 +1,14 @@
 const storageKey = 'awesomeBooks';
-function loadDataFromLocalStorage() {
+const loadDataFromLocalStorage = () => {
   const dataLoaded = JSON.parse(localStorage.getItem(storageKey));
   if (dataLoaded == null) {
     return [];
   }
   return dataLoaded;
-}
+};
 
-function saveDataToLocalStorage(arrBooks) {
+const saveDataToLocalStorage = (arrBooks) => {
   localStorage.setItem(storageKey, JSON.stringify(arrBooks));
-}
+};
 
 export { loadDataFromLocalStorage, saveDataToLocalStorage };

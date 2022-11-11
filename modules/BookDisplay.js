@@ -1,7 +1,7 @@
 import { saveDataToLocalStorage } from './LocalStorage.js';
 
 export default function showBooks(books) {
-  function addElement(elementType, parent, className) {
+  const addElement = (elementType, parent, className) => {
     const element = document.createElement(elementType);
     element.classList.add(className);
     parent.appendChild(element);
