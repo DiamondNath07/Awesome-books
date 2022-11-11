@@ -11,8 +11,8 @@ class BookShelf {
     };
 
     this.arrBooks.push(newBook);
-    if (author.value === null) {
-      addBook = '';
+    if (author.value === '') {
+      addBook = false;
     }
   }
 
